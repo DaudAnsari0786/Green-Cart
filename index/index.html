@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veggie footer · Tailwind only</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome (optional but adds flavour) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- tiny custom override for freshness – still pure Tailwind classes in HTML -->
+</head>
+<body class="min-h-screen flex flex-col bg-[#f8f5f0]">
+
+  <!-- dummy page content (just to show footer at bottom) -->
+  <main class="flex-1 flex items-center justify-center px-4 py-16">
+    <div class="text-center max-w-2xl">
+      <h1 class="text-4xl md:text-5xl font-light text-[#2e5d3a] tracking-tight">
+        <i class="fas fa-seedling text-[#4caf50] mr-2"></i>FreshHarvest
+      </h1>
+      <p class="mt-3 text-lg text-[#3f4a3f]/70 italic">farm‑to‑table, every day</p>
+      <div class="mt-6 h-1 w-20 mx-auto rounded-full bg-[#4caf50]/30"></div>
+      <p class="mt-6 text-[#3f4a3f]/60 text-sm">⬇️  crisp footer with Tailwind only  ⬇️</p>
+    </div>
+  </main>
+
+  <!-- ============================================================ -->
+  <!--  VEGGIE E‑COMMERCE FOOTER — 100% Tailwind CSS                -->
+  <!-- ============================================================ -->
+  <footer class="bg-[#1e2f23] text-[#d4e0d4] border-t-4 border-[#4caf50]">
+    <div class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+
+      <!-- main grid: 4 columns (logo+about, quick links, support, newsletter) -->
+      <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+        <!-- 1. Brand + tagline -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-carrot text-[#4caf50] text-3xl"></i>
+            <span class="text-2xl font-semibold tracking-tight text-white">green<span class="text-[#4caf50]">Cart</span></span>
+          </div>
+          <p class="text-sm text-[#b3ccb3] max-w-xs leading-relaxed">
+            Fresh organic vegetables delivered from local farms to your doorstep. 
+            <span class="block mt-1 text-[#8fb38f]"><i class="fas fa-leaf text-[#4caf50] mr-1"></i> 100% chemical‑free</span>
+          </p>
+          <div class="flex gap-3 pt-1">
+            <a href="#" class="text-[#b3ccb3] hover:text-[#4caf50] transition text-lg"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-[#b3ccb3] hover:text-[#4caf50] transition text-lg"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-[#b3ccb3] hover:text-[#4caf50] transition text-lg"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-[#b3ccb3] hover:text-[#4caf50] transition text-lg"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- 2. Quick links (shop) -->
+        <div>
+          <h3 class="text-white font-medium text-lg mb-4 tracking-wide border-b border-[#3f5a3f] pb-2 inline-block">
+            <i class="fas fa-shopping-basket text-[#4caf50] mr-2 text-sm"></i>Shop
+          </h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[#4caf50] text-[10px]"></i>Fresh vegetables</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[#4caf50] text-[10px]"></i>Organic fruits</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[#4caf50] text-[10px]"></i>Herbs & greens</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[#4caf50] text-[10px]"></i>Seasonal boxes</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[#4caf50] text-[10px]"></i>Gift baskets</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Support / info -->
+        <div>
+          <h3 class="text-white font-medium text-lg mb-4 tracking-wide border-b border-[#3f5a3f] pb-2 inline-block">
+            <i class="fas fa-headset text-[#4caf50] mr-2 text-sm"></i>Support
+          </h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-circle text-[#4caf50] text-[6px]"></i>Contact us</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-circle text-[#4caf50] text-[6px]"></i>Returns & refunds</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-circle text-[#4caf50] text-[6px]"></i>Delivery info</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-circle text-[#4caf50] text-[6px]"></i>FAQ</a></li>
+            <li><a href="#" class="hover:text-[#4caf50] transition flex items-center gap-2"><i class="fas fa-circle text-[#4caf50] text-[6px]"></i>Track order</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Newsletter + contact -->
+        <div>
+          <h3 class="text-white font-medium text-lg mb-4 tracking-wide border-b border-[#3f5a3f] pb-2 inline-block">
+            <i class="fas fa-envelope text-[#4caf50] mr-2 text-sm"></i>Fresh deals
+          </h3>
+          <p class="text-sm text-[#b3ccb3] mb-3">
+            Subscribe for weekly veggie updates & 10% off your first order.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-2">
+            <input type="email" placeholder="Your email" 
+                   class="w-full px-4 py-2.5 rounded-lg bg-[#2d4030] border border-[#3f5a3f] text-white placeholder-[#8fb38f] text-sm focus:outline-none focus:ring-2 focus:ring-[#4caf50] focus:border-transparent" />
+            <button type="submit" 
+                    class="px-5 py-2.5 bg-[#4caf50] hover:bg-[#3d9140] text-white font-medium rounded-lg transition text-sm whitespace-nowrap">
+              <i class="fas fa-paper-plane mr-1"></i> Subscribe
+            </button>
+          </form>
+          <div class="mt-5 space-y-2 text-sm text-[#b3ccb3]">
+            <p><i class="fas fa-phone-alt text-[#4caf50] w-5"></i> +1 (555) 742-8734</p>
+            <p><i class="fas fa-envelope text-[#4caf50] w-5"></i> hello@greencart.farm</p>
+            <p><i class="fas fa-map-pin text-[#4caf50] w-5"></i> 144 Veggie Lane, Fresh Valley</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom bar: payment / copyright -->
+      <div class="mt-12 pt-6 border-t border-[#3f5a3f] flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#8fb38f]">
+        <div class="flex flex-wrap items-center gap-4">
+          <span><i class="fab fa-cc-visa text-xl"></i></span>
+          <span><i class="fab fa-cc-mastercard text-xl"></i></span>
+          <span><i class="fab fa-cc-paypal text-xl"></i></span>
+          <span><i class="fab fa-cc-apple-pay text-xl"></i></span>
+          <span class="text-[#8fb38f]/60 text-xs">|</span>
+          <span class="text-xs"><i class="fas fa-lock text-[#4caf50] mr-1"></i> secure checkout</span>
+        </div>
+        <div class="text-center sm:text-right">
+          <p class="text-xs tracking-wide">
+            &copy; 2026 <span class="text-white font-medium">greenCart</span> — farm fresh, always.
+            <span class="block sm:inline-block sm:ml-2 text-[#4caf50]/60"><i class="fas fa-seedling"></i> 100% organic</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
