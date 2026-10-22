@@ -104,7 +104,7 @@ const Nav = () => {
                 to={item.path}
                 onClick={scrollToTop}
                 className={({ isActive }) =>
-                  `px-3 lg:px-4 py-2 rounded-lg text-sm  font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105 ${
+                  `px-3 lg:px-4 py-2 rounded-lg text-s  font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105 ${
                     isActive
                       ? "text-white bg-white/20 shadow-lg shadow-green-500/20"
                       : "text-gray-300 hover:text-white"
