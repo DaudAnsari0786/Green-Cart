@@ -194,7 +194,7 @@ const ProductCard = () => {
       <div className="text-center mb-10">
         <h2 className=" text-4xl md:text-5xl font-bold text-white mb-4">
           🛒 Our Fresh Products
-          {/* <div className="w-fit h-1 bg-green-400 mx-auto mt-4 rounded-full" /> */}
+          <div className="w-fit h-1 bg-green-400 mx-auto mt-4 rounded-full" />
         </h2>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto">
           Discover our handpicked selection of fresh, organic fruits and

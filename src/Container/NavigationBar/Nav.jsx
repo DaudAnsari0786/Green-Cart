@@ -84,7 +84,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-green-900 to-gray-800 shadow-xl sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-green-900 to-gray-800 shadow-xl sticky top-0 z-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 lg:h-16">
           {/* Logo */}
@@ -97,14 +97,14 @@ const Nav = () => {
           </NavLink>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-1 lg:space-x-4">
+          <div className="hidden md:flex items-center space-x-1 ">
             {navItems.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.path}
                 onClick={scrollToTop}
                 className={({ isActive }) =>
-                  `px-3 lg:px-4 py-2 rounded-lg text-sm lg:text-base font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105 ${
+                  `px-3 lg:px-4 py-2 rounded-lg text-sm  font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105 ${
                     isActive
                       ? "text-white bg-white/20 shadow-lg shadow-green-500/20"
                       : "text-gray-300 hover:text-white"
